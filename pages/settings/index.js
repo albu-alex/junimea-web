@@ -1,4 +1,3 @@
-import useLocalStorage from 'use-local-storage';
 import {useEffect, useState} from "react";
 import { modifyTheme } from "../../methods/settings/modifyTheme";
 
@@ -7,7 +6,7 @@ export default function Settings() {
     useEffect(() => {
         const newTheme = localStorage.getItem('theme')
         setTheme(newTheme)
-    }, [])
+    })
     const changeTheme = () => {
       const newTheme = modifyTheme(theme)
       setTheme(newTheme)
