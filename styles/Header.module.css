@@ -9,3 +9,8 @@
     height: 6vh;
     border-bottom: 1px solid var(--border-color)
 }
+
+.userIcon{
+    font-size: 1.2rem;
+    color: var(--text-primary)
+}
