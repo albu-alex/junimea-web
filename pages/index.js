@@ -1,12 +1,11 @@
 import styles from '../styles/Home.module.css';
-import useLocalStorage from 'use-local-storage';
-import { useEffect } from "react";
+import {useEffect, useState} from "react";
 
 export default function Home() {
-  const [theme, setTheme] = useLocalStorage('theme', '');
+  const [theme, setTheme] = useState("")
   useEffect(() => {
-    const isDarkPreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setTheme(isDarkPreferred ? 'dark' : 'light')
+    const newTheme = localStorage.getItem("theme")
+    setTheme(newTheme)
   }, [setTheme])
   return (
     <div className={styles.container} data-theme={theme}>
