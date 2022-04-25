@@ -20,11 +20,15 @@
 }
 
 .userIcon:hover{
-    transform: scale(1.2);
-    transition: all .5s;
+    transform: scale(1.4);
+    transition: all .3s;
 }
 
 .item:hover{
-    transform: scale(1.2);
-    transition: all .5s;
+    transform: scale(1.4);
+    transition: all .3s;
+}
+
+.item:active{
+    color: var(--accent);
 }
