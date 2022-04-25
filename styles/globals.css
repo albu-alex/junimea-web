@@ -11,10 +11,12 @@ body {
   --text-primary: #070700;
   --text-secondary: #212121;
   --accent: #555555;
+  --border-color: rgba(7, 7, 0, 0.5);
 }
 [data-theme='dark'] {
   --background: #070700;
   --text-primary: ghostwhite;
   --text-secondary: #DADADA;
   --accent: #AAAAAA;
+  --border-color: rgba(248, 248, 255, 0.5);
 }

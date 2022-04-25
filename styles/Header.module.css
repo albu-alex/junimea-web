@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    background-color: var(--background);
+    flex-direction: row;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    border-bottom: 1px solid var(--border-color)
+}
