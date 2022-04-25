@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import { modifyTheme } from "../../methods/settings/modifyTheme";
+import styles from "../../styles/Settings.module.css";
 
 export default function Settings() {
     const [theme, setTheme] = useState("")
@@ -13,10 +14,12 @@ export default function Settings() {
       localStorage.setItem('theme', newTheme)
     }
     return(
-        <div>
-            <button onClick={() => changeTheme()} data-theme={theme}>
-                <p>{(theme === 'dark') ? 'Dark' : 'Light'} mode</p>
-            </button>
+        <div className={styles.container} data-theme={theme}>
+            <div className={styles.buttonContainer}>
+                <button onClick={changeTheme} className={styles.button}>
+                    <p>{(theme === 'dark') ? 'Dark' : 'Light'} mode</p>
+                </button>
+            </div>
         </div>
     )
 }
