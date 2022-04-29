@@ -19,6 +19,15 @@ export default function Settings() {
                 <button onClick={changeTheme} className={styles.button}>
                     <p>{(theme === 'dark') ? 'Dark' : 'Light'} mode</p>
                 </button>
+                <button onClick={changeTheme} className={styles.button}>
+                    <p>Update profile</p>
+                </button>
+                <button onClick={changeTheme} className={styles.button}>
+                    <p>Logout</p>
+                </button>
+                <button onClick={changeTheme} className={styles.button}>
+                    <p>Save changes</p>
+                </button>
             </div>
         </div>
     )

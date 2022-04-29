@@ -15,5 +15,10 @@
 }
 
 .buttonContainer{
-    margin-top: 3vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
 }
