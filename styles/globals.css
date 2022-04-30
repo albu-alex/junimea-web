@@ -9,7 +9,7 @@ body {
   --background: ghostwhite;
   --text-primary: #070700;
   --text-secondary: #212121;
-  --accent: #555555;
+  --accent: #AAAAAA;
   --border-color: rgba(7, 7, 0, 0.5);
   --link-color: #297150;
 }
@@ -18,7 +18,7 @@ body {
   --background: #070700;
   --text-primary: ghostwhite;
   --text-secondary: #DADADA;
-  --accent: #AAAAAA;
+  --accent: #555555;
   --border-color: rgba(248, 248, 255, 0.5);
   --link-color: #297150;
 }

@@ -12,6 +12,13 @@
     width: 40vw;
     height: 15vh;
     border: none;
+    border-radius: 1vh;
+}
+
+.buttonText{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-primary)
 }
 
 .buttonContainer{
