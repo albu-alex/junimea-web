@@ -16,16 +16,17 @@
 
 .userIcon{
     font-size: 1.2rem;
-    color: var(--text-primary)
+    color: var(--text-primary);
+    margin-right: 0.25rem;
 }
 
-.item{
-    color: var(--link-color)
+.item a {
+    margin-left: 0.25rem;
+    color: var(--text-secondary);
 }
 
-.userIcon:hover{
-    transform: scale(1.4);
-    transition: all .3s;
+.item a:hover {
+    color: var(--link-active)
 }
 
 .item:hover{
@@ -33,6 +34,6 @@
     transition: all .3s;
 }
 
-.item:active{
-    color: var(--accent);
+.item:hover > .userIcon {
+    color: var(--link-active);
 }

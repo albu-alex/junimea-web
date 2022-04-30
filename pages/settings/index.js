@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { modifyTheme } from "../../methods/settings/modifyTheme";
-import styles from "../../styles/Settings.module.css";
 import { useRouter } from "next/router";
+
+import styles from "../../styles/Settings.module.css";
 
 export default function Settings() {
     const [theme, setTheme] = useState("")
