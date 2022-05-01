@@ -1,0 +1,35 @@
+.container {
+    height: 100vh;
+    background-color: var(--background);
+}
+
+.header {
+    height: 36vh;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    height: 18vh;
+    width: 22vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+.icon {
+    font-size: 6rem;
+    color: var(--accent);
+}
+
+.primaryText {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-primary)
+}

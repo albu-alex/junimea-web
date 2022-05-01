@@ -1,8 +1,9 @@
-import styles from '../styles/Header.module.css';
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCog, faHome, faSignOut } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
+
+import styles from '../styles/Header.module.css';
 
 export default function Header() {
     const [theme, setTheme] = useState("")
