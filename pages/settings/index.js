@@ -3,14 +3,14 @@ import { modifyTheme } from "../../methods/settings/modifyTheme";
 import { useRouter } from "next/router";
 
 import styles from "../../styles/Settings.module.css";
+import {getTheme} from "../../methods/app/getTheme";
 
 export default function Settings() {
     const [theme, setTheme] = useState("")
     const [isLoggedIn, changeLoggedStateTo] = useState(false);
     const router = useRouter()
     useEffect(() => {
-        const newTheme = localStorage.getItem('theme');
-        setTheme(newTheme);
+        setTheme(getTheme())
     })
     useEffect(() => {
         const authToken = localStorage.getItem('auth-token');

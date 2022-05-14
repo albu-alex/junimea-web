@@ -2,13 +2,14 @@ import {useEffect, useState} from "react";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { getTheme } from "../../methods/app/getTheme";
+
 import styles from '../../styles/UserProfile.module.css';
 
 export default function UserProfile() {
     const [theme, setTheme] = useState('');
     useEffect(() => {
-        const newTheme = localStorage.getItem('theme')
-        setTheme(newTheme)
+        setTheme(getTheme())
     })
     return (
         <div className={styles.container} data-theme={theme}>

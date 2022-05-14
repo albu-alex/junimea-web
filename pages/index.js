@@ -1,11 +1,13 @@
-import styles from '../styles/Home.module.css';
 import {useEffect, useState} from "react";
+
+import {getTheme} from "../methods/app/getTheme";
+
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const [theme, setTheme] = useState("")
   useEffect(() => {
-    const newTheme = localStorage.getItem("theme")
-    setTheme(newTheme)
+    setTheme(getTheme())
   }, [setTheme])
   return (
     <div className={styles.container} data-theme={theme}>
